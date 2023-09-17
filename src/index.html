@@ -13,6 +13,7 @@
     </head>
     <body>
         <header class="header">
+            <h1 class="visually-hidden">Geometrica</h1>
             <div class="container container-header">
                 <a href="/src/index.html">
                 	<img
@@ -25,107 +26,189 @@
 	                >
                 </a>
             </div>
-            <div class="header__menu-button">
+            <button type="button" class="header__menu-button">
                 <span>Меню</span>
                 <img src="/public/images/group-96.svg" alt="menu button" />
-            </div>
+            </button>
         </header>
-        <main>
-            <div class="banner">
-                <div class="container">
-                    <span class="banner__collection">коллекция 2020 года</span>
-                    <span class="banner__brend">Casabella</span>
-                    <span class="banner__stock">СКИДКА 20% до 25 августа</span>
+        <div class="container__main">
+            <aside class="sidebar sidebar--hidden">
+                <h2 class="visually-hidden">sidebar navigation</h2>
+                <div class="sidebar__container">
+                    <button type="button" class="sidebar__close-menu-button"><img src="/public/images/close.svg" alt="close button"></button>
+                    <nav class="sidebar__navigation">
+                        <ul class="sidebar__list-navigation">
+                            <li class="sidebar__nav-item"><a href="./index.html">главная</a></li>
+                            <li class="sidebar__nav-item"><a href="./author.html">об авторе</a></li>
+                            <li class="sidebar__nav-item"><a href="./about.html">о фирме</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            </div>
-            <section class="demonstration">
-                <div class="container">
-                    <ul class="demonstration__list">
-                        <li class="demonstration__item">
-                            <h3 class="demonstration__item-title">
-                                керамогранит
-                            </h3>
-                            <span class="demonstration__item-subtitle"
-                                >67 коллекций, 1 478 товаров</span
-                            >
-                        </li>
-                        <li class="demonstration__item">
-                            <h3 class="demonstration__item-title">
-                                крупные форматы
-                            </h3>
-                            <span class="demonstration__item-subtitle"
-                                >67 коллекций, 1 478 товаров</span
-                            >
-                        </li>
-                        <li class="demonstration__item">
-                            <h3 class="demonstration__item-title">
-                                керамическая плитка
-                            </h3>
-                            <span class="demonstration__item-subtitle"
-                                >67 коллекций, 1 478 товаров</span
-                            >
-                        </li>
-                        <li>
-                            <h3 class="demonstration__item-title">
-                                Изготовление изделий
-                            </h3>
-                        </li>
-                        <li class="demonstration__item">
-                            <h3 class="demonstration__item-title">обои</h3>
-                            <span class="demonstration__item-subtitle"
-                                >1 478 товаров</span
-                            >
-                        </li>
-                    </ul>
+            </aside>
+            <main>
+                <div class="banner">
+                    <div class="container">
+                        <span class="banner__collection">коллекция 2020 года</span>
+                        <span class="banner__brend">Casabella</span>
+                        <span class="banner__stock">СКИДКА 20% до 25 августа</span>
+                    </div>
                 </div>
-            </section>
-            <section class="features">
-                <div class="container">
-                    <ul class="features__list">
-                        <li class="features__item">
-							<img src="/public/images/truck.svg" alt="truck" />
-                            <div>
-                            	<h3 class="features__item-title">удобная доставка по Иркутску</span>
-	                            <span class="features__item-subtitle">в день покупки</span>
-                            </div>
-                        </li>
-                        <li class="features__item">
-							<img src="/public/images/group.svg" alt="group" />
-                            <div>
-                            	<h3 class="features__item-title">резка плитки и керамогранита</span>
-	                            <span   class="features__item-subtitle">под ваш проект</span>
-                            </div>
-                        </li>
-                        <li class="features__item">
-							<img src="/public/images/layers.svg" alt="layers" />
-                            <div>
-                            	<h3 class="features__item-title">монтаж плитки на вашем объекте</span>
-	                            <span  class="features__item-subtitle">под ключ</span>
+                <section class="demonstration">
+                    <h2 class="visually-hidden">demonstration</h2>
+                    <div class="container">
+                        <ul class="demonstration__list">
+                            <li class="demonstration__item">
+                                <h3 class="demonstration__item-title">
+                                    керамогранит
+                                </h3>
+                                <span class="demonstration__item-subtitle"
+                                    >67 коллекций, 1 478 товаров</span
+                                >
+                            </li>
+                            <li class="demonstration__item">
+                                <h3 class="demonstration__item-title">
+                                    крупные форматы
+                                </h3>
+                                <span class="demonstration__item-subtitle"
+                                    >67 коллекций, 1 478 товаров</span
+                                >
+                            </li>
+                            <li class="demonstration__item">
+                                <h3 class="demonstration__item-title">
+                                    керамическая плитка
+                                </h3>
+                                <span class="demonstration__item-subtitle"
+                                    >67 коллекций, 1 478 товаров</span
+                                >
+                            </li>
+                            <li>
+                                <h3 class="demonstration__item-title">
+                                    Изготовление изделий
+                                </h3>
+                            </li>
+                            <li class="demonstration__item">
+                                <h3 class="demonstration__item-title">обои</h3>
+                                <span class="demonstration__item-subtitle"
+                                    >1 478 товаров</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="features">
+                    <h2 class="visually-hidden">features</h2>
+                    <div class="container">
+                        <ul class="features__list">
+                            <li class="features__item">
+    							<img src="/public/images/truck.svg" alt="truck" />
+                                <div>
+                                	<h3 class="features__item-title">удобная доставка по Иркутску</span>
+    	                            <span class="features__item-subtitle">в день покупки</span>
+                                </div>
+                            </li>
+                            <li class="features__item">
+    							<img src="/public/images/group.svg" alt="group" />
+                                <div>
+                                	<h3 class="features__item-title">резка плитки и керамогранита</span>
+    	                            <span   class="features__item-subtitle">под ваш проект</span>
+                                </div>
+                            </li>
+                            <li class="features__item">
+    							<img src="/public/images/layers.svg" alt="layers" />
+                                <div>
+                                	<h3 class="features__item-title">монтаж плитки на вашем объекте</span>
+    	                            <span  class="features__item-subtitle">под ключ</span>
 
-                            </div>
-                        </li>
-                        <li class="features__item">
-							<img src="/public/images/codepen.svg" alt="codepen" />
-                            <div>
-                            	<h3 class="features__item-title">3D дизайн-проект в подарок</span
-	                            ><span class="features__item-subtitle">при покупке плитки</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-			<section class="сontacts">
-				<div class="container">
-					<h2 class="сontacts__title">Контактная информация</h2>
-					<p class="сontacts__address">г. Иркутск, ул. Старо-Кузьмихинская, 41/3</p>
-					<p class="сontacts__opening-hours">Часы работы: 9:00 — 21:00</p>
-					<span class="сontacts__number">+7 (3952) 48-28-05</span>
-					<span class="сontacts__email">geometrika@mail.ru
-					</span>
-				</div>
-			</section>
-        </main>
-        <footer>
+                                </div>
+                            </li>
+                            <li class="features__item">
+    							<img src="/public/images/codepen.svg" alt="codepen" />
+                                <div>
+                                	<h3 class="features__item-title">3D дизайн-проект в подарок</span
+    	                            ><span class="features__item-subtitle">при покупке плитки</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="goods">
+                    <div class="container">
+                        <ul class="goods__section-list">
+                            <li class="goods__section-item">
+                                <h3 class="section-item__title"><a href="">Керамогранит</a></h3>
+                                <ul class="section-item__list">
+                                    <li class="section-item__item">
+                                        <div class="section-item__item-header">
+                                            <img src="/public/images/ceramogranit1.png" alt="ceramogranit1" />
+                                            <h4>Керамогранит Creto Forza Calacatta white PG 01 45х45</h4>
+                                        </div>                                 <div class="section-item__item-footer">
+                                            <span>3 564 P</span>
+                                            <button type="button"><img src="/public/images/shopping-cart.svg" alt="shopping-cart" /></button>
+                                        </div>
+                                    </li>
+                                    <li class="section-item__item">
+                                        <div class="section-item__item-header">
+                                            <img src="/public/images/ceramogranit2.png" alt="ceramogranit2" />
+                                            <h4>Керамогранит «Жаклин» 20x80 см 1.6 м² цвет белый</h4>
+                                        </div>                                 <div class="section-item__item-footer">
+                                            <span>3 564 P</span>
+                                            <button type="button"><img src="/public/images/shopping-cart.svg" alt="shopping-cart" /></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="goods__section-item">
+                                <h3 class="section-item__title"><a href="">Керамическая плитка</a></h3>
+                                <ul class="section-item__list">
+                                    <li class="section-item__item">
+                                        <div class="section-item__item-header">
+                                            <img src="/public/images/ceramogranit2.png" alt="ceramogranit2" />
+                                            <h4>Керамогранит «Жаклин» 20x80 см 1.6 м² цвет белый</h4>
+                                        </div>                                 <div class="section-item__item-footer">
+                                            <span>3 564 P</span>
+                                            <button type="button"><img src="/public/images/shopping-cart.svg" alt="shopping-cart" /></button>
+                                        </div>
+                                    </li>
+                                    <li class="section-item__item">
+                                        <div class="section-item__item-header">
+                                            <img src="/public/images/ceramogranit2.png" alt="ceramogranit2" />
+                                            <h4>Керамогранит «Жаклин» 20x80 см 1.6 м² цвет белый</h4>
+                                        </div>                                 <div class="section-item__item-footer">
+                                            <span>3 564 P</span>
+                                            <button type="button"><img src="/public/images/shopping-cart.svg" alt="shopping-cart" /></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="goods__section-item">
+                                <h3 class="section-item__title"><a href="">Крупные форматы</a></h3>
+                                <ul class="section-item__list">
+                                    <li class="section-item__item">
+                                        <div class="section-item__item-header">
+                                            <img src="/public/images/ceramogranit2.png" alt="ceramogranit2" />
+                                            <h4>Керамогранит «Жаклин» 20x80 см 1.6 м² цвет белый</h4>
+                                        </div>                                 <div class="section-item__item-footer">
+                                            <span>3 564 P</span>
+                                            <button type="button"><img src="/public/images/shopping-cart.svg" alt="shopping-cart" /></button>
+                                        </div>
+                                    </li>
+                                    <li class="section-item__item">
+                                        <div class="section-item__item-header">
+                                            <img src="/public/images/ceramogranit2.png" alt="ceramogranit2" />
+                                            <h4>Керамогранит «Жаклин» 20x80 см 1.6 м² цвет белый</h4>
+                                        </div>                                 <div class="section-item__item-footer">
+                                            <span>3 564 P</span>
+                                            <button type="button"><img src="/public/images/shopping-cart.svg" alt="shopping-cart" /></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
 			<div class="container container-header">
 				<a href="/src/index.html">
 					<img
@@ -137,7 +220,16 @@
 						>любая плитка и на любой вкус</span
 					>
 				</a>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-container">
+                        <img src="/public/images/copyright-svgrepo-com.svg" alt="copyright" />
+                        <span class="footer__copyright-author">Ковшов Алексей ВПР21</span>
+                    </div>
+                    <span class="footer__copyright-email">geometrika@mail.ru</span>
+                </div>
             </div>
 		</footer>
     </body>
+    <script type='module' src="./index.js"></script>
 </html>
+

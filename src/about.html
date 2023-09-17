@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="node_modules/modern-normalize/modern-normalize.css"
+        />
+        <link rel="stylesheet" href="fonts.css" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Geometrica</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="visually-hidden">Geometrica</h1>
+            <div class="container container-header">
+                <a href="/src/index.html">
+                    <img
+                        class="header__logo"
+                        src="../public/images/logo.svg"
+                        alt="logo"
+                    />
+                    <span class="header__subtitle"
+                        >любая плитка и на любой вкус</span
+                    >
+                </a>
+            </div>
+            <button type="button" class="header__menu-button">
+                <span>Меню</span>
+                <img src="/public/images/group-96.svg" alt="menu button" />
+            </button>
+        </header>
+        <div class="container__main">
+            <aside class="sidebar sidebar--hidden">
+                <h2 class="visually-hidden">sidebar navigation</h2>
+                <div class="sidebar__container">
+                    <button type="button" class="sidebar__close-menu-button">
+                        <img
+                            src="/public/images/close.svg"
+                            alt="close button"
+                        />
+                    </button>
+                    <nav class="sidebar__navigation">
+                        <ul class="sidebar__list-navigation">
+                            <li class="sidebar__nav-item">
+                                <a href="./index.html">главная</a>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <a href="./author.html">об авторе</a>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <a href="./about.html">о фирме</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <main>
+                <section class="сontacts">
+                    <div style="position: relative; overflow: hidden">
+                        <a
+                            href="https://yandex.ru/maps/63/irkutsk/?utm_medium=mapframe&utm_source=maps"
+                            style="
+                                color: #eee;
+                                font-size: 12px;
+                                position: absolute;
+                                top: 0px;
+                            "
+                            >Иркутск</a
+                        ><a
+                            href="https://yandex.ru/maps/63/irkutsk/house/staro_kuzmikhinskaya_ulitsa_41_3/ZUkCaAVoS0IDWEJvYWJzdX5rZgA=/?ll=104.282745%2C52.242828&utm_medium=mapframe&utm_source=maps&z=16"
+                            style="
+                                color: #eee;
+                                font-size: 12px;
+                                position: absolute;
+                                top: 14px;
+                            "
+                            >Старо-Кузьмихинская улица, 41/3 на карте Иркутска —
+                            Яндекс Карты</a
+                        ><iframe
+                            class="contacts__iframe"
+                            src="https://yandex.ru/map-widget/v1/?ll=104.282745%2C52.242828&mode=whatshere&whatshere%5Bpoint%5D=104.282744%2C52.242828&whatshere%5Bzoom%5D=17&z=16"
+                            height="459"
+                            frameborder="1"
+                            allowfullscreen="true"
+                            style="position: relative"
+                        ></iframe>
+                    </div>
+                    <div class="container">
+                        <h2 class="сontacts__title">Контактная информация</h2>
+                        <p class="сontacts__address">
+                            г. Иркутск, ул. Старо-Кузьмихинская, 41/3
+                        </p>
+                        <p class="сontacts__opening-hours">
+                            Часы работы: 9:00 — 21:00
+                        </p>
+                        <span class="сontacts__number">+7 (3952) 48-28-05</span>
+                        <span class="сontacts__email">geometrika@mail.ru </span>
+                        <button type="button" class="сontacts__button">
+                            Обратная связь
+                        </button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container container-header">
+                <a href="/src/index.html">
+                    <img
+                        class="header__logo"
+                        src="../public/images/logo.svg"
+                        alt="logo"
+                    />
+                    <span class="header__subtitle"
+                        >любая плитка и на любой вкус</span
+                    >
+                </a>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-container">
+                        <img
+                            src="/public/images/copyright-svgrepo-com.svg"
+                            alt="copyright"
+                        />
+                        <span class="footer__copyright-author"
+                            >Ковшов Алексей ВПР21</span
+                        >
+                    </div>
+                    <span class="footer__copyright-email"
+                        >geometrika@mail.ru</span
+                    >
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>

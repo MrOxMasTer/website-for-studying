@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="node_modules/modern-normalize/modern-normalize.css"
+        />
+        <link rel="stylesheet" href="fonts.css" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Geometrica</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="visually-hidden">Geometrica</h1>
+            <div class="container container-header">
+                <a href="/src/index.html">
+                    <img
+                        class="header__logo"
+                        src="../public/images/logo.svg"
+                        alt="logo"
+                    />
+                    <span class="header__subtitle"
+                        >любая плитка и на любой вкус</span
+                    >
+                </a>
+            </div>
+            <button type="button" class="header__menu-button">
+                <span>Меню</span>
+                <img src="/public/images/group-96.svg" alt="menu button" />
+            </button>
+        </header>
+        <div class="container__main">
+            <aside class="sidebar sidebar--hidden">
+                <h2 class="visually-hidden">sidebar navigation</h2>
+                <div class="sidebar__container">
+                    <button type="button" class="sidebar__close-menu-button">
+                        <img
+                            src="/public/images/close.svg"
+                            alt="close button"
+                        />
+                    </button>
+                    <nav class="sidebar__navigation">
+                        <ul class="sidebar__list-navigation">
+                            <li class="sidebar__nav-item">
+                                <a href="./index.html">главная</a>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <a href="./author.html">об авторе</a>
+                            </li>
+                            <li class="sidebar__nav-item">
+                                <a href="./about.html">о фирме</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <main>
+                <section class="author">
+                    <div class="container">
+                        <span class="author__text">Выполнил: </span>
+                        <span class="author__title"
+                            >Ковшов Алексей Русланович</span
+                        >
+                        <span class="author__group">ВПР21</span>
+                        <span class="сontacts__email"
+                            >oxmaster911@gmail.com
+                        </span>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container container-header">
+                <a href="/src/index.html">
+                    <img
+                        class="header__logo"
+                        src="../public/images/logo.svg"
+                        alt="logo"
+                    />
+                    <span class="header__subtitle"
+                        >любая плитка и на любой вкус</span
+                    >
+                </a>
+                <div class="footer__copyright">
+                    <div class="footer__copyright-container">
+                        <img
+                            src="/public/images/copyright-svgrepo-com.svg"
+                            alt="copyright"
+                        />
+                        <span class="footer__copyright-author"
+                            >Ковшов Алексей ВПР21</span
+                        >
+                    </div>
+                    <span class="footer__copyright-email"
+                        >geometrika@mail.ru</span
+                    >
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="module" src="./index.js"></script>
+</html>
